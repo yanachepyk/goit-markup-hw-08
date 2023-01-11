@@ -6,6 +6,10 @@ body {
     background-color: $color-primary-white;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+
+    &.menu-opened {
+        overflow: hidden;
+    }
 }
 
 h1,
@@ -85,6 +89,6 @@ img {
     }
 
     @include media-query(mobile){
-        
+
     }
 }
