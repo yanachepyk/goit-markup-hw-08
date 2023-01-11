@@ -1,0 +1,33 @@
+@import '../utils/variables';
+@import '../utils/media-query';
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: $font-weight-700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    span {
+        color: $color-accent;
+    }
+}
+
+.logo--black {
+    color: $color-primary-black;
+    margin-right: 93px;
+}
+
+.logo--white {
+    color: $color-primary-white;
+    display: block;
+    margin-bottom: 20px;
+
+    @include media-query(mobile){
+        display: flex;
+        justify-content: center;
+    }
+
+    @include media-query(tablet){
+       text-align: center;
+    }
+}

@@ -1,0 +1,119 @@
+@import '../utils/variables';
+@import '../utils/media-query';
+
+.hero__btn {
+    color: $color-primary-white;
+    background-color: $color-accent;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.06em;
+    font-weight: $font-weight-700;
+    font-size: 16px;
+    line-height: 1.88;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.send-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: $font-weight-700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $color-primary-white;
+    background-color: $color-accent;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 28px;
+    gap: 10px;
+}
+
+.modal__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $color-primary-white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        fill: $color-accent;
+    }
+    
+ }
+ 
+ .modal__send-btn {
+    margin: 30px auto 0;
+    padding: 10px 52px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav__btn {
+    color: $text-primary;
+    background-color: $background-secondary;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: $font-weight-500;
+    font-size: 16px;
+    line-height: 1.62;
+    margin-bottom: 50px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
+    transition-property: color, background-color;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+        color: $color-primary-white;
+        background-color: $color-accent;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.menu__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    .menu__close-icon {
+        fill: $text-primary;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            fill: $color-accent;
+        }
+    }
+}
+
+.menu-open {
+    @include media-query(tablet) {
+        display: none;
+    }
+
+    @include media-query(desktop) {
+        display: none;
+    }
+}

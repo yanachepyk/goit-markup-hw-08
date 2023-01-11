@@ -1,0 +1,53 @@
+@import '../utils/variables';
+
+
+.peculiarities__container-icon {
+    background-color: $background-secondary;
+    border-radius: 4px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.peculiarities__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include media-query(tablet){
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    @include media-query(desktop){
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.peculiarities__title {
+    font-size: 14px;
+    line-height: 1.14; 
+    margin-bottom: 10px;
+    
+    @include media-query(mobile){
+        text-align: center;
+    }
+}
+
+.peculiarities__text {
+    font-weight: $font-weight-400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.peculiarities__item {
+
+    @include media-query(tablet){
+        max-width: 354px;
+    }
+}

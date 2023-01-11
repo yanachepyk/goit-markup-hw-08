@@ -1,0 +1,51 @@
+@import '../utils/variables';
+@import '../utils/media-query';
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.clients__icon {
+    fill: $icon-primary;
+    transition-property: fill;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link {
+    border: 1px solid $icon-primary;
+    border-radius: 4px;
+    width: 210px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include media-query(tablet) {
+        width: 226px;
+    }
+
+    @include media-query(desktop) {
+        width: 170px;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid $color-accent;
+
+        .clients__icon {
+            fill: $color-accent;
+        }
+    }
+}
+
+
+

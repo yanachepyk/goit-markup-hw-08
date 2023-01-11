@@ -1,0 +1,90 @@
+@import '../utils/variables';
+@import '../utils/media-query';
+
+body {
+    color: $text-primary;
+    background-color: $color-primary-white;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+    @include media-query(tablet) {
+        max-width: 768px;
+    }
+
+    @include media-query(desktop) {
+        max-width: 1200px;
+    }
+   
+
+    .subtitle {
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+
+        &.hidden {
+            display: none;
+        }
+    }
+}
+
+.text {
+    color: $text-secondary;
+}
+
+.work-examples__item,
+.team-cards__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-set {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    @include media-query(mobile){
+        flex-direction: column;
+    }
+
+    @include media-query(mobile){
+        
+    }
+}

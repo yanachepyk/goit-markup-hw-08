@@ -1,0 +1,85 @@
+@import '../utils/variables';
+
+.menu {
+    background-color: $color-primary-white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 48px 84px 48px 40px;
+    display: none;
+
+    &.is-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.menu__nav-item {
+    margin-bottom: 32px;
+
+    &.active--color .menu__nav-link {
+        color: $color-accent;
+    }
+}
+
+.menu__nav-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $text-primary;
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
+   
+}
+
+.menu__contacts-item {
+    margin-bottom: 32px;
+}
+
+.menu__contacts-tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $color-accent;
+}
+
+.menu__contacts-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $text-secondary;
+}
+
+.menu__socials {
+    display: flex;
+}
+
+.menu__socials-item {
+    padding: 0 10px;
+
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+    
+}
+
+.menu__socials-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $color-accent;
+}

@@ -1,0 +1,42 @@
+@import '../utils/variables';
+@import '../utils/media-query';
+
+.work-examples {
+    padding-top: 0;
+
+    @include media-query(mobile) {
+        display: none;
+    }
+
+    @include media-query(tablet) {
+        display: none;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__text {
+        font-weight: $font-weight-700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $color-primary-white;
+    }
+    
+    &__desc {
+        background-color: rgba(47, 48, 58, 0.8);
+        position: absolute;
+        height: 70px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
