@@ -1481,7 +1481,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 48px 84px 48px 40px;
+  padding: 48px 40px;
   display: none;
 }
 .menu.is-open {
@@ -1539,6 +1539,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 64px;
 }
 
 .menu__socials-item {
