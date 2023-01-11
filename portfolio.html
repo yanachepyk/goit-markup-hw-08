@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -56,7 +56,7 @@
     <main>
       <section class="section">
         <div class="container nav">
-          <h1 class=" subtitle hidden">Приклади роботи</h1>
+          <h1 class="subtitle hidden">Приклади роботи</h1>
           <nav>
             <ul class="nav__list">
               <li><button class="nav__btn" type="button">Усі</button></li>
@@ -70,7 +70,21 @@
             <li>
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                  <img class="projects__img" src="./images/project/project_1.jpg" alt="веб-сайт технокряк" width="370" height="294" />
+                  <img
+                    class="projects__img"
+                    srcset="
+                  images/project/img_370.jpg 370w,
+                  images/project/img_354.jpg 354w,
+                  images/project/img_450.jpg 450w,
+                  images/project/img_708.jpg 708w,
+                  images/project/img_740.jpg 740w,
+                  images/project/img_900.jpg 900w
+                "
+                    sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                    src="images/project/img_450.jpg"
+                    alt="веб-сайт технокряк"
+                    width="450"
+                  />
                   <div class="projects__text-wrapper">
                     <p class="projects__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -80,143 +94,224 @@
                 </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Технокряк</h2>
-                  <p class=" text card-desc__text">Веб-сайт</p>
+                  <p class="text card-desc__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="img-error">
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                <img class="projects__img" src="./images/project/project_2.jpg" alt="дизайн постеру" width="370" height="294" />
-                <div class="projects__text-wrapper">
-                  <p class="projects__desc">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
+                  <img class="projects__img"
+                  srcset="
+                  images/project/img_370-1.jpg 370w,
+                  images/project/img_354-1.jpg 354w,
+                  images/project/img_450-1.jpg 450w,
+                  images/project/img_708-1.jpg 708w,
+                  images/project/img_740-1.jpg 740w,
+                  images/project/img_900-1.jpg 900w
+                "
+                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                   src="images/project/img_450-1.jpg" alt="дизайн постеру" width="450" />
+                  <div class="projects__text-wrapper">
+                    <p class="projects__desc">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                  </div>
                 </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                  <p class=" text card-desc__text">Дизайн</p>
+                  <p class="text card-desc__text">Дизайн</p>
                 </div>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                <img class="projects__img" src="./images/project/project_3.jpg" alt="додаток ресторану" width="370" height="294" />
-                <div class="projects__text-wrapper">
+                  <img class="projects__img" 
+                  srcset="
+                  images/project/img_370-2.jpg 370w,
+                  images/project/img_354-2.jpg 354w,
+                  images/project/img_450-2.jpg 450w,
+                  images/project/img_708-2.jpg 708w,
+                  images/project/img_740-2.jpg 740w,
+                  images/project/img_900-2.jpg 900w
+                "
+                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                  
+                  src="images/project/img_450-2.jpg" alt="додаток ресторану" width="450" />
+                  <div class="projects__text-wrapper">
                     <p class="projects__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
-                  </div>
+                </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class=" text card-desc__text">Додаток</p>
+                  <p class="text card-desc__text">Додаток</p>
                 </div>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                <img class="projects__img" src="./images/project/project_4.jpg" alt="проект прайм" width="370" height="294" />
-                <div class="projects__text-wrapper">
+                  <img class="projects__img" 
+                  srcset="
+                  images/project/img_370-3.jpg 370w,
+                  images/project/img_354-3.jpg 354w,
+                  images/project/img_450-3.jpg 450w,
+                  images/project/img_708-3.jpg 708w,
+                  images/project/img_740-3.jpg 740w,
+                  images/project/img_900-3.jpg 900w
+                "
+                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                  src="images/project/img_450-3.jpg" alt="проект прайм" width="450"/>
+                  <div class="projects__text-wrapper">
                     <p class="projects__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
-                  </div>
+                </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Проєкт <span lang="en">Prime</span></h2>
-                  <p class=" text card-desc__text">Маркетинг</p>
+                  <p class="text card-desc__text">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                <img class="projects__img" src="./images/project/project_5.jpg" alt="додаток проекту боксес" width="370" height="294" />
-                <div class="projects__text-wrapper">
+                  <img class="projects__img" 
+                  srcset="
+                  images/project/img_370-4.jpg 370w,
+                  images/project/img_354-4.jpg 354w,
+                  images/project/img_450-4.jpg 450w,
+                  images/project/img_708-4.jpg 708w,
+                  images/project/img_740-4.jpg 740w,
+                  images/project/img_900-4.jpg 900w
+                "
+                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                  src="images/project/img_450-4.jpg" alt="додаток проекту боксес" width="450"/>
+                  <div class="projects__text-wrapper">
                     <p class="projects__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
-                  </div>
+                </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Проєкт <span lang="en">Boxes</span></h2>
-                  <p class=" text card-desc__text">Додаток</p>
+                  <p class="text card-desc__text">Додаток</p>
                 </div>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                <img class="projects__img" src="./images/project/project_6.jpg" alt="веб-сайт" width="370" height="294" />
-                <div class="projects__text-wrapper">
+                  <img class="projects__img" 
+                  srcset="
+                  images/project/img_370-5.jpg 370w,
+                  images/project/img_354-5.jpg 354w,
+                  images/project/img_450-5.jpg 450w,
+                  images/project/img_708-5.jpg 708w,
+                  images/project/img_740-5.jpg 740w,
+                  images/project/img_900-5.jpg 900w
+                "
+                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                  src="images/project/img_450-5.jpg" alt="веб-сайт" width="450" />
+                  <div class="projects__text-wrapper">
                     <p class="projects__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
-                  </div>
+                </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Inspiration has no Borders</h2>
-                  <p class=" text card-desc__text">Веб-сайт</p>
+                  <p class="text card-desc__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                <img class="projects__img" src="./images/project/project_7.jpg" alt="дизайн видання" width="370" height="294" />
-                <div class="projects__text-wrapper">
+                  <img class="projects__img" 
+                  srcset="
+                  images/project/img_370-6.jpg 370w,
+                  images/project/img_354-6.jpg 354w,
+                  images/project/img_450-6.jpg 450w,
+                  images/project/img_708-6.jpg 708w,
+                  images/project/img_740-6.jpg 740w,
+                  images/project/img_900-6.jpg 900w
+                "
+                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                  src="images/project/img_450-6.jpg" alt="дизайн видання" width="450"/>
+                  <div class="projects__text-wrapper">
                     <p class="projects__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
-                  </div>
+                </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Видання <span lang="en">Limited Edition</span></h2>
-                  <p class=" text card-desc__text">Дизайн</p>
+                  <p class="text card-desc__text">Дизайн</p>
                 </div>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                <img class="projects__img" src="./images/project/project_8.jpg" alt="проект лаб" width="370" height="294" />
-                <div class="projects__text-wrapper">
+                  <img class="projects__img"
+                  srcset="
+                  images/project/img_370-7.jpg 370w,
+                  images/project/img_354-7.jpg 354w,
+                  images/project/img_450-7.jpg 450w,
+                  images/project/img_708-7.jpg 708w,
+                  images/project/img_740-7.jpg 740w,
+                  images/project/img_900-7.jpg 900w
+                "
+                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                  src="images/project/img_450-7.jpg" alt="проект лаб" width="450" />
+                  <div class="projects__text-wrapper">
                     <p class="projects__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
-                  </div>
+                </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Проєкт <span lang="en">LAB</span></h2>
-                  <p class=" text card-desc__text">Маркетинг</p>
+                  <p class="text card-desc__text">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" class="projects__link">
                 <div class="projects__wrapper">
-                <img class="projects__img" src="./images/project/project_9.jpg" alt="додаток гровінг бізнес" width="370" height="294" />
-                <div class="projects__text-wrapper">
+                  <img class="projects__img" 
+                  srcset="
+                  images/project/img_370-8.jpg 370w,
+                  images/project/img_354-8.jpg 354w,
+                  images/project/img_450-8.jpg 450w,
+                  images/project/img_708-8.jpg 708w,
+                  images/project/img_740-8.jpg 740w,
+                  images/project/img_900-8.jpg 900w
+                "
+                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, (min-width: 468px) 80vw, 100vw"
+                    src="images/project/img_450-8.jpg" alt="проект лаб" width="450"/>
+                  <div class="projects__text-wrapper">
                     <p class="projects__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                       вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
-                  </div>
+                </div>
                 <div class="card-desc">
                   <h2 class="card-desc__title">Growing Business</h2>
-                  <p class=" text card-desc__text">Додаток</p>
+                  <p class="text card-desc__text">Додаток</p>
                 </div>
               </a>
             </li>
